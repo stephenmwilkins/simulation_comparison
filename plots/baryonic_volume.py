@@ -298,4 +298,5 @@ ax.set_xlabel(r'$\rm\log_{10}(baryonic\ resolution\ element\ mass/M_{\odot})$')
 ax.set_ylabel(r'$\rm\log_{10}(volume/cMpc^{3})$')
 
 fig.savefig(f'figs/baryonic_volume.pdf')
+fig.savefig(f'figs/baryonic_volume.png')
 fig.clf()
