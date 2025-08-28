@@ -33,7 +33,7 @@ width = 0.85
 ax = fig.add_axes((left, bottom, width, height))
 
 # set axes limits
-ax.set_xlim([10.5, 4.])
+ax.set_xlim([10.5, 3.])
 ax.set_ylim([3.8, 11.99])
 
 # set colour scale for redshift end-point
@@ -47,15 +47,18 @@ cmap = cmr.cosmic
 
 simulations = {}
 
-# simulations['Technicolor Dawn'] = {'size': 12/0.7, 'DM_mass': 1.3725E6, 'resimulation': False,  'RT': True}
-# simulations['CROC'] = {'size': 30/0.7, 'DM_mass': 7E6, 'resimulation': False,  'RT': True}
-# simulations['CoDA'] = {'size': 91, 'DM_mass': 7E6, 'resimulation': False,  'RT': True}
-# simulations['Renaissance'] = {'size': 8.3, 'DM_mass': 3E4, 'resimulation': 40,  'RT': True}
-# simulations['Katz+17'] = {'size': 10/0.7, 'DM_mass': 6.5E6, 'resimulation': False,  'RT': True}
-# simulations['SPHINX-5'] = {'size': 5/0.7, 'DM_mass': 3.1E4, 'resimulation': False,  'RT': True}
-# simulations['SPHINX-10'] = {'size': 10/0.7, 'DM_mass': 2.5E5, 'resimulation': False,  'RT': True}
+# simulations['Technicolor Dawn'] = {'size': 12/0.7, 'DM_mass': 1.3725E6, 'resimulation': False,  'RT': True, 'complete': True,}
+# simulations['CROC'] = {'size': 30/0.7, 'DM_mass': 7E6, 'resimulation': False,  'RT': True, 'complete': True,}
+# simulations['CoDA'] = {'size': 91, 'DM_mass': 7E6, 'resimulation': False,  'RT': True, 'complete': True,}
+# simulations['Renaissance'] = {'size': 8.3, 'DM_mass': 3E4, 'resimulation': 40,  'RT': True, 'complete': True,}
+# simulations['Katz+17'] = {'size': 10/0.7, 'DM_mass': 6.5E6, 'resimulation': False,  'RT': True, 'complete': True,}
+# simulations['SPHINX-5'] = {'size': 5/0.7, 'DM_mass': 3.1E4, 'resimulation': False,  'RT': True, 'complete': True,}
+# simulations['SPHINX-10'] = {'size': 10/0.7, 'DM_mass': 2.5E5, 'resimulation': False,  'RT': True, 'complete': True,}
 
-# simulations['Bahamas'] = {'size': 400/0.7, 'm_g': 8E8/0.7, 'resimulation': False,  'RT': False, 'redshift_end': 0.0}
+
+
+
+simulations['Bahamas'] = {'size': 400/0.7, 'm_g': 8E8/0.7, 'resimulation': False,  'RT': False, 'redshift_end': 0.0, 'complete': True, 'label': True}
 
 
 
@@ -64,9 +67,9 @@ simulations = {}
 simulations['EAGLE-Ref'] = {'size': 100, 'm_g': 1.81E6,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
 simulations['EAGLE-Recal'] = {'size': 25, 'm_g': 2.26E5, 'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
 
-simulations['Illustris-TNG50'] = {'size': 51.7, 'm_g': 8.5E4,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
-simulations['Illustris-TNG100'] = {'size': 110.7, 'm_g': 1.4E6,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': False}
-simulations['Illustris-TNG300'] = {'size': 302.6, 'm_g': 1.1E7,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
+simulations['TNG50'] = {'size': 51.7, 'm_g': 8.5E4,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
+simulations['TNG100'] = {'size': 110.7, 'm_g': 1.4E6,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': False}
+simulations['TNG300'] = {'size': 302.6, 'm_g': 1.1E7,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
 
 simulations['Simba-100'] = {'size': 100/0.7, 'm_g': 1.82E7,   'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
 simulations['Simba-50'] = {'size': 50/0.7, 'm_g': 2.28E6,  'RT': False, 'complete': True, 'redshift_end': 1.0, 'label': True}
@@ -92,20 +95,53 @@ simulations['FLAMINGO-L1_m10'] = {'size': 1000, 'm_g': 8.56E9,  'RT': False, 'co
 simulations['FLAMINGO-L2p8_m9'] = {'size': 2800, 'm_g': 1.07E9,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': False}
 
 # COLIBRE future runs
-simulations['COLIBRE-100'] = {'size': 100, 'm_g': 1E5,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': True}
-simulations['COLIBRE-250'] = {'size': 250, 'm_g': 1E6,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': False}
+# simulations['COLIBRE-100'] = {'size': 100, 'm_g': 1E5,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': True}
+# simulations['COLIBRE-250'] = {'size': 250, 'm_g': 1E6,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': False}
 
 
 # zoom simulations (e.g FLARES)
 zoom_simulations = {}
-zoom_simulations['FLARES-1'] = {
-    'parent': 3200,
-    'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
-    'm_g': 1.81E6,
-    'RT': False,
-    'complete': True,
-    'redshift_end': 5.0}
+# zoom_simulations['FLARES/EAGLE'] = {
+#     'parent': 3200,
+#     'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
+#     'm_g': 1.81E6,
+#     'RT': False,
+#     'complete': True,
+#     'redshift_end': 5.0}
 
+# zoom_simulations['low'] = {
+#     'parent': 3200,
+#     'size': [np.array([9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 2.0],
+#     'm_g': 1E7,
+#     'RT': False,
+#     'complete': True,
+#     'redshift_end': 5.0}
+
+
+# zoom_simulations['med'] = {
+#     'parent': 3200,
+#     'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 1.0],
+#     'm_g': 1E6,
+#     'RT': False,
+#     'complete': True,
+#     'redshift_end': 5.0}
+
+# zoom_simulations['high'] = {
+#     'parent': 3200,
+#     'size': [np.array([7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.1, 6.3, 6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
+#     'm_g': 1E5,
+#     'RT': False,
+#     'complete': True,
+#     'redshift_end': 5.0}
+
+
+# zoom_simulations['ultra-high'] = {
+#     'parent': 3200,
+#     'size': [np.array([6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.]), np.array([5.1, 5.3, 5.5, 5.7, 6.6, 6.0, 6.5, 7.0, 7.5])],
+#     'm_g': 1E4,
+#     'RT': True,
+#     'complete': True,
+#     'redshift_end': 5.0}
 
 
 # surveys
@@ -192,11 +228,11 @@ for i, (simulation_name, simulation) in enumerate(simulations.items()):
 
         # add number label
         ax.text(
-            np.log10(s['m_g'])-0.075,
+            np.log10(s['m_g'])+0.075,
             3*np.log10(s['size'])-0.15,
             j,
             fontsize=7,
-            ha='left',
+            ha='right',
             va='center',
             alpha=alpha,
             c=c)
@@ -237,24 +273,35 @@ if add_zoom_simulations:
         f = interpolate.interp1d(s['size'][0], s['size'][1], kind='cubic')
         y = f(x)
 
-        norm_ = mpl.colors.Normalize(vmin=7, vmax=11)
+        norm_ = mpl.colors.Normalize(vmin=6, vmax=12)
         cmap_ = cmr.bubblegum
 
         c_ = cmap_(norm_(x))
 
-        ax.plot([np.log10(s['m_g'])]*2, [y[0], 3*np.log10(s['parent'])-0.1],c='k',alpha=0.05, zorder = 0, lw = 5, solid_capstyle='round')
+        # ax.plot([np.log10(s['m_g'])]*2, [y[0], 3*np.log10(s['parent'])-0.1],c='k',alpha=0.05, zorder = 0, lw = 5, solid_capstyle='round')
         ax.scatter([np.log10(s['m_g'])]*100, y, color=c_, s=10, zorder = 1)
 
         label_loc = np.mean([y[0], y[-1]])
         label_loc = y[0]
 
+        # ax.text(
+        #     np.log10(s['m_g'])+0.15,
+        #     label_loc,
+        #     rf'$\rm\bf {simulation_name}$',
+        #     c='k',
+        #     rotation=90,
+        #     fontsize=6,
+        #     ha='center',
+        #     va='bottom',)
+        
+
         ax.text(
-            np.log10(s['m_g'])+0.2,
-            label_loc,
+            np.log10(s['m_g'])-0.03,
+            s['size'][1][-1]+0.1,
             rf'$\rm\bf {simulation_name}$',
             c='k',
             rotation=90,
-            fontsize=8,
+            fontsize=6,
             ha='center',
             va='bottom',)
 
@@ -279,6 +326,8 @@ if add_surveys:
         area = survey['area']
 
         volume = -np.log10(1. / ((v2 - v1) * (area/(41253.*3600))).value)
+
+        print(survey_name, volume, 10**volume)
 
         ax.axhline(volume, c='k', alpha=0.05, lw=2)
         ax.text(
