@@ -95,44 +95,44 @@ simulations['FLAMINGO-L1_m10'] = {'size': 1000, 'm_g': 8.56E9,  'RT': False, 'co
 simulations['FLAMINGO-L2p8_m9'] = {'size': 2800, 'm_g': 1.07E9,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': False}
 
 # COLIBRE future runs
-# simulations['COLIBRE-100'] = {'size': 100, 'm_g': 1E5,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': True}
-# simulations['COLIBRE-250'] = {'size': 250, 'm_g': 1E6,  'RT': False, 'complete': False, 'redshift_end': 0.0, 'label': False}
+simulations['COLIBRE-100'] = {'size': 100, 'm_g': 1E5,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': True}
+simulations['COLIBRE-250'] = {'size': 250, 'm_g': 1E6,  'RT': False, 'complete': True, 'redshift_end': 0.0, 'label': False}
 
 
 # zoom simulations (e.g FLARES)
 zoom_simulations = {}
-# zoom_simulations['FLARES/EAGLE'] = {
-#     'parent': 3200,
-#     'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
-#     'm_g': 1.81E6,
-#     'RT': False,
-#     'complete': True,
-#     'redshift_end': 5.0}
+zoom_simulations['FLARES/EAGLE'] = {
+    'parent': 3200,
+    'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
+    'm_g': 1.81E6,
+    'RT': False,
+    'complete': True,
+    'redshift_end': 5.0}
 
-# zoom_simulations['low'] = {
-#     'parent': 3200,
-#     'size': [np.array([9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 2.0],
-#     'm_g': 1E7,
-#     'RT': False,
-#     'complete': True,
-#     'redshift_end': 5.0}
+zoom_simulations['low'] = {
+    'parent': 3200,
+    'size': [np.array([9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 2.0],
+    'm_g': 1E7,
+    'RT': False,
+    'complete': True,
+    'redshift_end': 5.0}
 
 
-# zoom_simulations['med'] = {
-#     'parent': 3200,
-#     'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 1.0],
-#     'm_g': 1E6,
-#     'RT': False,
-#     'complete': True,
-#     'redshift_end': 5.0}
+zoom_simulations['med'] = {
+    'parent': 3200,
+    'size': [np.array([8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0, 11.5]), np.array([6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0, 8.5]) + 1.0],
+    'm_g': 1E6,
+    'RT': False,
+    'complete': True,
+    'redshift_end': 5.0}
 
-# zoom_simulations['high'] = {
-#     'parent': 3200,
-#     'size': [np.array([7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.1, 6.3, 6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
-#     'm_g': 1E5,
-#     'RT': False,
-#     'complete': True,
-#     'redshift_end': 5.0}
+zoom_simulations['high'] = {
+    'parent': 3200,
+    'size': [np.array([7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10., 10.5, 11.0]), np.array([6.1, 6.3, 6.5, 6.7, 6.8, 6.9, 7.1, 7.5, 8.0])],
+    'm_g': 1E5,
+    'RT': False,
+    'complete': True,
+    'redshift_end': 5.0}
 
 
 # zoom_simulations['ultra-high'] = {
